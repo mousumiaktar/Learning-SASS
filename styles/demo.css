@@ -3,4 +3,20 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+header {
+  background-color: #ffab73;
+}
+
+main {
+  background-color: #ffd384;
+}
+
+footer {
+  background-color: #ffaec0;
+}
+
+#about {
+  font-size: 20px;
 }/*# sourceMappingURL=demo.css.map */
