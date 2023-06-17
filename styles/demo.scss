@@ -8,47 +8,64 @@ header{
 };
 */
 
-
-
-header{
-    background-color: index.$header-bgcolor;
+@mixin para-style {
+    font-size: 30px;
+    text-align: justify;
 };
 
+#education p {
+    @include para-style();
+};
+
+header {
+    background-color: index.$header-bgcolor;
+}
+
+;
+
 // NAVBAR STYLINg WITH NESTING===================================
-nav{
+nav {
     margin-top: 15px;
 
-    ul{
+    ul {
         list-style-type: none;
 
-        li{
+        li {
             display: inline;
             margin: 0 15px;
 
-            a{
-                display: inline-block; 
+            a {
+                display: inline-block;
                 color: white;
                 text-decoration: none;
                 padding: 10px;
                 transition: 0.4s;
                 border-radius: 5px;
-             }
-             a:hover{
+            }
+
+            a:hover {
                 background: black;
             }
         }
-    };
+    }
+
+    ;
 }
 
 
-main{
+main {
     background-color: index.$main-bgcolor;
-};
+}
 
-footer{
+;
+
+footer {
     background-color: index.$footer-bgcolor;
-};
+}
 
-#about{
+;
+
+#about {
     font-size: index.$para-fontsize;
 }
+
