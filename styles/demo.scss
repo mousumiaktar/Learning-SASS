@@ -9,6 +9,22 @@ header{
 */
 
 
+// @if, @else if, @else start==========
+
+@mixin setFontSize($value){
+    @if $value == small {
+        font-size: 12px;
+    } @else if $value == medium{
+        font-size: 16px;
+    } @else if $value == large{
+        font-size: 20px;
+    } @else {
+        font-size: none;
+    }
+}
+
+// @if, @else if, @else end==========
+
 // Extand And Inheritance start==========
 .btn{
     border: none;
@@ -17,6 +33,7 @@ header{
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
+    @include setFontSize(medium)
 }
 
 .btn-download{
@@ -34,7 +51,7 @@ header{
 
 // Mixin Start==========
 @mixin para-style {
-    font-size: 30px;
+    @include setFontSize(large);
     text-align: justify;
 };
 
