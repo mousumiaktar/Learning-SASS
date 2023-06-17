@@ -8,6 +8,31 @@ header{
 };
 */
 
+
+// Extand And Inheritance start==========
+.btn{
+    border: none;
+    padding: 10px 25px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-download{
+    @extend .btn;
+    background-color: red;
+};
+
+.btn-learnmore{
+    @extend .btn;
+    background-color: black;
+    color: white;
+};
+// Extand And Inheritance End==========
+
+
+// Mixin Start==========
 @mixin para-style {
     font-size: 30px;
     text-align: justify;
@@ -16,6 +41,9 @@ header{
 #education p {
     @include para-style();
 };
+// Mixin Start End==========
+
+
 
 header {
     background-color: index.$header-bgcolor;
